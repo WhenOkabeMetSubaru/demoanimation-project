@@ -133,7 +133,7 @@ export default function Home ()
           </div>
         </section>
 
-        <section className='w-full flex p-24  h-[120vh] bg-white'>
+        <section className='w-full flex p-24 overflow-hidden  h-[120vh] bg-white'>
           <div className='w-2/3'>
             {/* <motion.span aria-hidden initial={ { opacity: 0.2, x: 200 } } viewport={ { once: false } } transition={ { duration: 0.8,staggerChildren:0.5 } } whileInView={ { opacity: 1, x: 0 } } className='text-6xl flex'>
              {
@@ -146,7 +146,7 @@ export default function Home ()
             <div className='flex'>
 
 
-              <motion.span initial={ { x: 100 } } animate={ { x: 0 } } transition={ { duration: 2, staggerChildren: 1 } } className='flex text-5xl'>
+              <motion.span initial={ { x: 200 } } whileInView={ { x: 2 } } transition={ { duration: 0.5, staggerChildren: 1 } } className='flex text-5xl'>
                 {
                   "ABOUT US"?.split("")?.map((char,i) =>
                   {
@@ -208,9 +208,9 @@ export default function Home ()
           </div>
         </section>
 
-        <section className='w-full p-20 min-h-[100vh] border-black border-t-1.5 border-b-1.5 bg-white'>
-          <p className='text-6xl font-semibold'>We are dedicated to</p>
-          <p className='text-6xl font-semibold'>Modular Interiors like</p>
+        <section className='w-full overflow-hidden p-20 min-h-[100vh] border-black border-t-1.5 border-b-1.5 bg-white'>
+          <motion.p initial="hidden" whileInView="visible" viewport={ { once: false } } variants={ variantText } className='text-6xl font-semibold'>We are dedicated to</motion.p>
+          <motion.p initial="hidden" whileInView="visible" viewport={ { once: false } } variants={ variantText } className='text-6xl font-semibold'>Modular Interiors like</motion.p>
 
           <div className='flex mt-16'>
             <div className='w-1/2 my-3'>
@@ -340,7 +340,7 @@ export default function Home ()
 
         <section className='w-full overflow-hidden p-20 min-h-[100vh] '>
 
-          <motion.p className='text-6xl'>CONTACT US</motion.p>
+          <motion.p initial="hidden" whileInView="visible" viewport={ { once: false } } variants={ variantText } className='text-6xl'>CONTACT US</motion.p>
 
 
           <motion.div initial="hidden" whileInView="visible" viewport={ { once: false } } variants={ variantText } className='mt-16 flex flex-col gap-y-3'>
