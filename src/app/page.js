@@ -100,7 +100,7 @@ export default function Home ()
           
         </p> */}
           <motion.p initial={ { opacity: 0.2, x: 300, y: 125 } } viewport={ { once: false } } transition={ { duration: 0.5 } } whileInView={ { opacity: 1, x: 100, y: 100 } } className='text-5xl'>
-            We`&apos;re the Manufactures –<br />
+            We&apos;re the Manufactures –<br />
             straight from our factory to your home.
           </motion.p>
 
@@ -269,7 +269,7 @@ export default function Home ()
                 <motion.p initial={ { opacity: 0, x: 30 } } viewport={ { once: false } } transition={ { duration: 0.5 } } whileInView={ { opacity: 1, x: 0 } } className='text-2xl font-semibold'>Material Selection
                   & Check list</motion.p>
                 <motion.p initial={ { opacity: 0, x: 30 } } viewport={ { once: false } } transition={ { duration: 0.5 } } whileInView={ { opacity: 1, x: 0 } } className='mt-28'>
-                  At this stage, we schedule a meeting at our factory to showcase materials that meet your requirements. Together, we`&apos;ll review and finalise the checklist for each room, making any necessary required revisions or additions. This collaborative process ensures an accurate final quote for your project.
+                  At this stage, we schedule a meeting at our factory to showcase materials that meet your requirements. Together, we&apos;ll review and finalise the checklist for each room, making any necessary required revisions or additions. This collaborative process ensures an accurate final quote for your project.
                 </motion.p>
                 <div className='absolute right-8 top-6 w-24 h-24'>
                   <Image width={ 200 } height={ 100 } src="/card3.svg" />
