@@ -78,7 +78,7 @@ export default function Home ()
           <div className='p-0 md:p-16'>
             <nav className=' h-24 flex px-2 justify-between '>
               <div className='flex items-center'>
-                <Image width={ 180 } height={ 10 } alt='' src={ "/trufitLogo.webp" } />
+                <Image width={ 300 } height={ 10 } alt='curvededge' className='cursor-pointer' src={ "/curvededgelogo2.png" } />
               </div>
 
               <ul className='lg:flex  text-white text-xl items-center gap-x-16'>
@@ -95,7 +95,7 @@ export default function Home ()
           </div>
 
         </section>
-        <section className='w-full relative overflow-hidden duration-500  h-[70vh]'>
+        <section className='w-full relative border-black border-b-[0.05rem] overflow-hidden duration-500  h-[40vh]'>
           {/* <p className={`text-5xl px-5 '}`}>
           
         </p> */}
@@ -104,7 +104,7 @@ export default function Home ()
             straight from our factory to your home.
           </motion.p>
 
-          <div className=''>
+          {/* <div className=''>
             <div className='w-full text-7xl mt-52 flex items-center h-28 overflow-hidden bg-black text-white'>
               <Marquee speed={ 150 }>
 
@@ -130,10 +130,11 @@ export default function Home ()
 
               </Marquee>
             </div>
-          </div>
+          </div> */}
+
         </section>
 
-        <section className='w-full flex p-24 overflow-hidden  h-[120vh] bg-white'>
+        <section className='w-full flex p-24 overflow-hidden   h-[120vh] bg-white'>
           <div className='w-2/3'>
             {/* <motion.span aria-hidden initial={ { opacity: 0.2, x: 200 } } viewport={ { once: false } } transition={ { duration: 0.8,staggerChildren:0.5 } } whileInView={ { opacity: 1, x: 0 } } className='text-6xl flex'>
              {
@@ -150,7 +151,7 @@ export default function Home ()
                 {
                   "ABOUT US"?.split("")?.map((char,i) =>
                   {
-                    return <motion.span key={i} initial={ { x: 50, y: 10, opacity: 0 } } animate={ { x: 10, y: 0, opacity: 1 } } className=''>{ char }</motion.span>;
+                    return <motion.span key={i} initial={ { x: 50, y: 10, opacity: 0 } } animate={ { x: 0, y: 0, opacity: 1 } } className=''>{ char }</motion.span>;
                   })
                 }
               </motion.span>
@@ -223,8 +224,8 @@ export default function Home ()
               </ul>
             </div>
             <div className='w-1/2  flex justify-center items-center'>
-              <div className='w-80 h-80'>
-                <Image width={ 250 } height={ 200 } alt="" src="/modularsection.svg" />
+              <div className=' '>
+                <Image width={ 500 } height={ 300 } alt="" src="/curvededgelogo.png" />
               </div>
             </div>
           </div>
@@ -352,8 +353,8 @@ export default function Home ()
 
           <div className='w-full flex h-[70vh] overflow-hidden rounded-xl my-10 border border-black'>
             <div className='w-1/2 border-r border-black h-[70vh] flex justify-center items-center'>
-              <div className='w-64 h-64'>
-                <Image alt="" height={ 500 } width={ 500 } src="/contactlogo.webp" />
+              <div className='w-full h-96 '>
+                <Image alt="" height={ 600 } width={ 600 }  className='text-black' src="/curvededgelogo.png" />
               </div>
             </div>
             <div className='w-1/2 p-8 pl-16'>
